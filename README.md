@@ -9,6 +9,7 @@ This is the code of paper **Query2GMM: Learning Representation with Gaussian Mix
 ## Data
 * data for EPFO queries and data for queries with negation 
 * download here: <https://drive.google.com/file/d/1UTgquQO4xgukFgf-llpksEERnl5e_ujd/view?usp=sharing>
+* after downloaded, create the ./data folder, and put the decompressed datasets in this folder
 
 ## Run
 * ./Q2GMM/codes/example.sh
