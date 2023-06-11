@@ -296,7 +296,6 @@ def main():
 
     parser.add_argument('-g', '--gamma', default=12.0, type=float)
     parser.add_argument('--data_path', type=str, default='../data/')
-    parser.add_argument('--group_data_path', type=str, default='../data/')
 
     args = parser.parse_args()
     print(args)
@@ -333,13 +332,11 @@ def main():
         filemode='w',
     )
 
-    group_data_path = args.group_data_path  # + data_name
-
     def load_group_info():
         print("loading group information...")
-        with open('%s/node_group_one_hot_vector.pkl' % group_data_path, 'rb') as handle:
+        with open('%s/node_group_one_hot_vector.pkl' % (data_path + "/"), 'rb') as handle:
             node_group_one_hot_vector_single = pickle.load(handle)
-        with open('%s/group_adj_matrix.pkl' % group_data_path, 'rb') as handle:
+        with open('%s/group_adj_matrix.pkl' % (data_path + "/"), 'rb') as handle:
             group_adj_matrix_single = pickle.load(handle)
         return node_group_one_hot_vector_single, group_adj_matrix_single
 
