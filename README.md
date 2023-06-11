@@ -7,8 +7,8 @@ This is the code of paper **Query2GMM: Learning Representation with Gaussian Mix
 * tqdm
 
 ## Data
-* data for EPFO queries provided by: <https://github.com/hyren/query2box>
-* data for queries with negation provided by: <https://github.com/snap-stanford/KGReasoning>
+* data for EPFO queries and data for queries with negation 
+* download here: <https://drive.google.com/file/d/1UTgquQO4xgukFgf-llpksEERnl5e_ujd/view?usp=sharing>
 
 ## Run
 * ./Q2GMM/codes/example.sh
